@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Chess Website｜Japan Go Association</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Go Tournament', 'Prize Money (JPY)'],
+          ['Kisei', 45000000],
+          ['Judan', 7000000],
+          ['Honinbo', 28000000],
+          ['Gosei', 8000000],
+          ['Meijin', 30000000],
+          ['Oza', 14000000],
+          ['Tengen', 13000000]
+        ]);
+
+        var options = {
+          title: 'Prize Money Distribution of the Seven Major Go Tournaments in Japan'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1>Go Information Website</h1>
+            <h3>Go is a strategic board game that uses a grid board and black and white stones for gameplay. It originated in China, where it was historically known by various names such as "Yi," "Qi," and "Shou Tan." It is one of the four classical arts of Chinese scholars, alongside music, calligraphy, and painting.</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index_EN.html">Index</a></li>
+                <li><a href="./korea_EN.html">Korea Baduk Association</a></li>
+                <li><a class="active" href="#">Japan Go Association</a></li>
+                <li><a href="./china_EN.html">China Qiyuan</a></li>
+                <li><a href="./taiwan_EN.html">Haifeng Go Academy</a></li>
+                <li class="LAN"><a href="./japan.html">中文</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="japan">
+                <div class="image">
+                    <img src="./images/Nihon_Ki-in_Headquarter_(2016-05-05)_5.jpg" alt="日本棋院" />
+                </div>
+                <div class="info">
+                    <p>The Japan Go Association (Japanese: 一般公益法人日本棋院／いっぱんこうえきほうじんにほんきいん Ippankōekihōjin Nihon Kiin) is the largest Go organization in Japan, responsible for organizing various Go tournaments. Its headquarters are located in Chiyoda, Tokyo, with regional headquarters in Nagoya and Osaka (Central and Kansai headquarters, respectively). The association currently oversees around 300 professional Go players.</p>
+                    <p>The Japan Go Association was established in 1924 through the merger of the two largest Go organizations at the time, the Honinbo House and the Hoensha, with the support of Kishichiro Okura. After its establishment, the association faced competition from various groups and individuals, including the Kiseisha, Go Seigen, and the Shinsha. In 1950, led by Utaro Hashimoto, a group of Kansai-based players broke away from the Japan Go Association to form the Kansai Ki-in.</p>
+                    <p>Affiliated Organizations:</p>
+                    <ul>
+                        <li>Tokyo Headquarters</li>
+                        <li>Kansai Headquarters</li>
+                        <li>Central Headquarters</li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="competition">
+                <div class="text">
+                    <h3>Titles of the Japan Go Association</h3>
+                    <p>
+                        The seven major Go tournaments in Japan, ranked by prize money, are Kisei, Meijin, Honinbo, Oza, Tengen, Gosei, and Judan. Among these, the top three tournaments—Kisei, Meijin, and Honinbo—are collectively known as the "Big Three Titles." The Kisei title is considered the most prestigious. Winning all three of these titles simultaneously is referred to as the "Triple Crown."
+                    </p>
+                    <p>
+                        There are many tournaments where professional players compete for championships, but what sets the "Seven Major Tournaments" apart from other competitions?
+                    </p>
+                    <p>
+                        The main characteristic of the Seven Major Tournaments is that all players can participate, although the method for determining challengers varies. In the Meijin and Honinbo tournaments, players must go through preliminary rounds before entering a league stage. Reaching the league stage is a testament to being a top-tier player.
+                    </p>
+                    <p>
+                        The prize money for these title tournaments is as follows:
+                    </p>
+                    <ul>
+                        <li>Kisei: 45 million yen</li>
+                        <li>Judan: 7 million yen</li>
+                        <li>Honinbo: 28 million yen</li>
+                        <li>Gosei: 8 million yen</li>
+                        <li>Meijin: 30 million yen</li>
+                        <li>Oza: 14 million yen</li>
+                        <li>Tengen: 13 million yen</li>
+                    </ul>
+                </div>
+
+                <div id="piechart"></div>
+
+            </div>
+
+
+
+            
+        </section>
+    </main>
+    <script
+      type="text/javascript"
+      color="0,0,0"
+      opacity="0.3"
+      zIndex="-2"
+      count="99"
+      src="https://cdnjs.cloudflare.com/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js"
+      integrity="sha512-P+NGabN/TJDOnCVOFJO+E06TBm4i+M8dTT91lWg/8UpwLrzicEXIypmABPpA47D0x6r+yxFHjYIZKWhc1h7xlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</body>
+</html>
