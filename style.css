@@ -194,3 +194,9 @@ section.taiwan h3{
 .taiwan ul {
     margin-left: 2rem;
   }
+
+@media screen and (max-width: 800px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}
